@@ -8,7 +8,103 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <RelativePanel Background="#FFEAB049">
+        <TextBlock
+            Name="Header"
+            FontSize="40"
+            FontWeight="Bold"
+            Margin="40, 50, 0, 60"
+            Foreground="Black"
+            >Rekisteröi uusi tunnus
+        </TextBlock>
 
-    </Grid>
+        <TextBlock
+            RelativePanel.Above="textBox1"
+            Margin="40, 0, 0, 0"
+            Foreground="Black"
+            >Valitse käyttäjänimesi:
+        </TextBlock>
+        <TextBox
+            RelativePanel.Below="Header"
+            Name="textBox1"
+            Margin="40, 0, 40, 60"
+            Width="600"
+            BorderBrush="Black"
+            Background="SeaShell"
+            >
+        </TextBox>
+
+        <TextBlock
+            RelativePanel.Above="textBox2"
+            Margin="40, 0, 0, 0"
+            Foreground="Black"
+            >Luo salasana:
+        </TextBlock>
+        <TextBox
+            RelativePanel.Below="textBox1"
+            Name="textBox2"
+            Margin="40, 0, 0, 60"
+            Width="600"
+            BorderBrush="Black"
+            Background="SeaShell"
+            >
+        </TextBox>
+
+        <TextBlock
+            RelativePanel.Above="textBox3"
+            Margin="40, 0, 0, 0"
+            Foreground="Black"
+            >Kirjoita salasanasi uudestaan
+        </TextBlock>
+        <TextBox
+            RelativePanel.Below="textBox2"
+            Name="textBox3"
+            Margin="40, 0, 40, 0"
+            Width="600"
+            BorderBrush="Black"
+            Background="SeaShell"
+            >
+        </TextBox>
+
+        <Button
+            Name="button1"
+            RelativePanel.Below="textBox3"
+            RelativePanel.AlignRightWith="textBox3"
+            RelativePanel.LeftOf="button2"
+            Background="#FFBDACA0"
+            Foreground="Black"
+            Margin="0, 15, 145, 0"
+            >Tyhjennä kentät
+        </Button>
+
+        <Button
+            Name="button2"
+            RelativePanel.Below="textBox3"
+            RelativePanel.AlignRightWith="textBox3"
+            Margin="0, 15, 40, 0"
+            Background="#FFBDACA0"
+            Foreground="Black"
+            >Rekisteröidy
+        </Button>
+
+        <TextBlock
+            Name="link1"
+            RelativePanel.Below="button2"
+            Foreground="Blue"
+            Margin="40, 0, 0, 0"
+            TextDecorations="Underline">
+                <Hyperlink
+                >Lue palvelun käyttöehdot
+                </Hyperlink>
+        </TextBlock>
+        <TextBlock
+            Name="link2"
+            RelativePanel.Below="link1"
+            Margin="40, 0, 0, 0">
+                <Hyperlink
+                >Tietosuojalausunto
+                </Hyperlink>    
+        </TextBlock>
+
+    </RelativePanel>
 </Page>
