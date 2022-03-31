@@ -14,56 +14,56 @@
             FontSize="40"
             FontWeight="Bold"
             Margin="40, 50, 0, 60"
-            Foreground="Black"
-            >Rekisteröi uusi tunnus
+            Foreground="White">
+                Rekisteröi uusi tunnus
         </TextBlock>
 
         <TextBlock
+            Name="label1"
             RelativePanel.Above="textBox1"
             Margin="40, 0, 0, 0"
-            Foreground="Black"
-            >Valitse käyttäjänimesi:
+            Foreground="White">
+                Valitse käyttäjänimesi:
         </TextBlock>
         <TextBox
             RelativePanel.Below="Header"
             Name="textBox1"
             Margin="40, 0, 40, 60"
             Width="600"
-            BorderBrush="Black"
-            Background="SeaShell"
-            >
+            BorderBrush="Gray"
+            Background="SeaShell">
         </TextBox>
 
         <TextBlock
+            Name="label2"
             RelativePanel.Above="textBox2"
             Margin="40, 0, 0, 0"
-            Foreground="Black"
-            >Luo salasana:
+            Foreground="White">
+                Luo salasana:
         </TextBlock>
         <TextBox
             RelativePanel.Below="textBox1"
             Name="textBox2"
             Margin="40, 0, 0, 60"
             Width="600"
-            BorderBrush="Black"
-            Background="SeaShell"
-            >
+            BorderBrush="Gray"
+            Background="SeaShell">
         </TextBox>
 
         <TextBlock
+            Name="label3"
             RelativePanel.Above="textBox3"
             Margin="40, 0, 0, 0"
-            Foreground="Black"
-            >Kirjoita salasanasi uudestaan
+            Foreground="White">
+                Kirjoita salasanasi uudestaan
         </TextBlock>
         <TextBox
             RelativePanel.Below="textBox2"
             Name="textBox3"
             Margin="40, 0, 40, 0"
             Width="600"
-            BorderBrush="Black"
-            Background="SeaShell"
-            >
+            BorderBrush="Gray"
+            Background="SeaShell">
         </TextBox>
 
         <Button
@@ -71,10 +71,10 @@
             RelativePanel.Below="textBox3"
             RelativePanel.AlignRightWith="textBox3"
             RelativePanel.LeftOf="button2"
-            Background="#FFBDACA0"
-            Foreground="Black"
-            Margin="0, 15, 145, 0"
-            >Tyhjennä kentät
+            Background="Gray"
+            Foreground="White"
+            Margin="0, 15, 145, 0">
+                Tyhjennä kentät
         </Button>
 
         <Button
@@ -82,29 +82,35 @@
             RelativePanel.Below="textBox3"
             RelativePanel.AlignRightWith="textBox3"
             Margin="0, 15, 40, 0"
-            Background="#FFBDACA0"
-            Foreground="Black"
-            >Rekisteröidy
+            Background="Gray"
+            Foreground="White">
+                Rekisteröidy
         </Button>
 
         <TextBlock
             Name="link1"
             RelativePanel.Below="button2"
-            Foreground="Blue"
-            Margin="40, 0, 0, 0"
+            Margin="40, 40, 0, 15"
             TextDecorations="Underline">
-                <Hyperlink
-                >Lue palvelun käyttöehdot
+                <Hyperlink>
+                    Lue palvelun käyttöehdot
                 </Hyperlink>
         </TextBlock>
         <TextBlock
             Name="link2"
             RelativePanel.Below="link1"
             Margin="40, 0, 0, 0">
-                <Hyperlink
-                >Tietosuojalausunto
+                <Hyperlink>
+                    Tietosuojalausunto
                 </Hyperlink>    
         </TextBlock>
+
+        <CheckBox 
+            Name="checkBox"
+            RelativePanel.Below="link2"
+            Margin="40, 50, 0, 0">
+            Hyväksyn palvelun käyttöehdot
+        </CheckBox>
 
     </RelativePanel>
 </Page>
